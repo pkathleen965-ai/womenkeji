@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body { font-family: 'PingFang SC', system-ui, sans-serif; }
+        .hero-bg { background: linear-gradient(135deg, #0F172A 0%, #1E40AF 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15); }
+    </style>
+    <title>预约演示/联系我们 - 湖北我们科技</title>
+</head>
+<body class="bg-gray-50 text-gray-800">
+<!-- 统一导航 -->
+<nav class="fixed top-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <span class="text-3xl font-bold text-blue-600">硅基员工</span>
+            <span class="text-sm text-gray-500">· 湖北我们科技</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-lg">
+            <a href="index.html" class="hover:text-blue-600">首页</a>
+            <a href="chanpin.html" class="hover:text-blue-600">产品介绍</a>
+            <a href="gongneng.html" class="hover:text-blue-600">核心功能</a>
+            <a href="peipao.html" class="hover:text-orange-500">陪跑服务</a>
+            <a href="knowledge.html" class="hover:text-blue-600">知识库</a>
+            <a href="qushi.html" class="hover:text-blue-600">行业趋势</a>
+            <a href="about.html" class="hover:text-blue-600">关于我们</a>
+            <a href="contact.html" class="text-blue-600 font-semibold">联系我们</a>
+        </div>
+        <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition">预约免费演示</a>
+    </nav>
+
+<!-- Banner首屏 -->
+<section class="hero-bg text-white pt-32 pb-24 text-center">
+    <div class="max-w-7xl mx-auto px-6">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">预约免费演示 / 联系我们</h1>
+        <p class="text-2xl md:text-3xl font-medium mt-4">专属行业顾问一对一讲解适配落地方案</p>
+        <p class="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto mt-6">提交信息10分钟内专人对接，无强制推销，客观分析企业方案</p>
+    </div>
+</section>
+
+<!-- 预约表单区块 -->
+<section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">填写预约信息</h2>
+        <form class="bg-gray-50 p-10 rounded-3xl card-hover">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <label class="text-xl font-semibold block mb-3">您的姓名 *</label>
+                    <input type="text" required class="w-full p-5 rounded-2xl text-xl border border-gray-200 focus:outline-none focus:border-blue-500">
+                </div>
+                <div>
+                    <label class="text-xl font-semibold block mb-3">企业全称 *</label>
+                    <input type="text" required class="w-full p-5 rounded-2xl text-xl border border-gray-200 focus:outline-none focus:border-blue-500">
+                </div>
+                <div>
+                    <label class="text-xl font-semibold block mb-3">联系手机号 *</label>
+                    <input type="tel" required class="w-full p-5 rounded-2xl text-xl border border-gray-200 focus:outline-none focus:border-blue-500">
+                </div>
+                <div>
+                    <label class="text-xl font-semibold block mb-3">主营行业 *</label>
+                    <input type="text" required class="w-full p-5 rounded-2xl text-xl border border-gray-200 focus:outline-none focus:border-blue-500">
+                </div>
+            </div>
+            <div class="mt-8">
+                <label class="text-xl font-semibold block mb-3">核心需求（选填）</label>
+                <textarea class="w-full h-40 p-5 rounded-2xl text-xl border border-gray-200 focus:outline-none focus:border-blue-500" placeholder="体验硅基系统/新媒体诊断/陪跑咨询"></textarea>
+            </div>
+            <button type="submit" class="w-full mt-10 bg-blue-600 text-white py-6 text-2xl font-bold rounded-2xl card-hover">提交预约，专人快速对接</button>
+        </form>
+    </div>
+</section>
+
+<!-- 联系方式区块 -->
+<section class="py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold mb-12">其他咨询渠道</h2>
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="p-10 rounded-3xl bg-white card-hover shadow">
+                <i class="fas fa-phone text-blue-600 text-5xl mb-6"></i>
+                <h3 class="text-2xl font-semibold mb-4">咨询电话</h3>
+                <p class="text-xl">18907283448</p>
+            </div>
+            <div class="p-10 rounded-3xl bg-white card-hover shadow">
+                <i class="fas fa-weixin text-green-500 text-5xl mb-6"></i>
+                <h3 class="text-2xl font-semibold mb-4">企业微信</h3>
+                <p class="text-xl">顾问企业微信（我们科技）</p>
+            </div>
+            <div class="p-10 rounded-3xl bg-white card-hover">
+                <i class="fas fa-map-marker-alt text-red-500 text-5xl mb-6"></i>
+                <h3 class="text-2xl font-semibold mb-4">公司地址</h3>
+                <p class="text-xl">湖北省十堰市茅箭区武当国际园</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 统一页脚 -->
+<footer class="bg-slate-900 text-gray-400 py-12">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <p class="text-lg">© 2026 湖北我们科技创业发展有限公司</p>
+        <p class="mt-1">鄂ICP备2026031801号-1</p>
+        <p class="mt-3 text-sm">让企业像火箭一样起飞</p>
+    </footer>
+</footer>
+</body>
+</html>

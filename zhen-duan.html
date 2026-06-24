@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body { font-family: 'PingFang SC', system-ui, sans-serif; }
+        .hero-bg { background: linear-gradient(135deg, #0F172A 0%, #DC2626 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15); }
+        .collapse-item { border:1px solid #eee; border-radius:16px; margin-bottom:12px; }
+        .collapse-header { padding:18px 24px; cursor:pointer; display:flex; justify-content:space-between; align-items:center; }
+        .collapse-body { padding:0 24px; max-height:0; overflow:hidden; transition:0.3s; }
+        .collapse-body.active { padding:16px 24px; max-height:600px; }
+    </style>
+    <title>免费企业诊断 - 找准线上盈利卡点 - 湖北我们科技</title>
+</head>
+<body class="bg-gray-50 text-gray-800">
+<!-- 统一导航 -->
+<nav class="fixed top-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <span class="text-3xl font-bold text-blue-600">硅基员工</span>
+            <span class="text-sm text-gray-500">· 湖北我们科技</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-lg">
+            <a href="index.html" class="hover:text-blue-600">首页</a>
+            <a href="chanpin.html" class="hover:text-blue-600">产品介绍</a>
+            <a href="gongneng.html" class="hover:text-blue-600">核心功能</a>
+            <a href="peipao.html" class="hover:text-orange-500">陪跑服务</a>
+            <a href="knowledge.html" class="hover:text-blue-600">知识库</a>
+            <a href="qushi.html" class="hover:text-blue-600">行业趋势</a>
+            <a href="about.html" class="hover:text-blue-600">关于我们</a>
+            <a href="zhen-duan.html" class="text-red-600 font-semibold">免费诊断</a>
+        </div>
+        <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition">预约免费演示</a>
+    </nav>
+</nav>
+
+<!-- Banner首屏 -->
+<section class="hero-bg text-white pt-32 pb-24">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">免费企业新媒体全盘诊断</h1>
+        <p class="text-2xl md:text-3xl font-medium mb-4">0元AI+专家联合体检，找准赚不到钱的核心根源</p>
+        <p class="text-xl md:text-2xl text-red-100 max-w-4xl mx-auto mb-12">60项标准化线上经营维度全面体检，输出专属落地方案</p>
+        <a href="#form" class="inline-block bg-white text-red-600 px-12 py-5 rounded-2xl text-xl font-semibold card-hover">立即填写申请诊断</a>
+    </div>
+</section>
+
+<!-- 为什么要做诊断 -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">绝大多数老板，都需要一次专业诊断</h2>
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="text-center p-10 card-hover rounded-3xl bg-gray-50">
+                <div class="text-6 mb-6">❓</div>
+                <h3 class="text-2xl font-semibold mb-4">看不清经营卡点</h3>
+                <p class="text-xl text-gray-600">日常事务繁杂，分不清是内容差、流量错、还是私域转化断裂，凭感觉运营只会持续踩坑。</p>
+            </div>
+            <div class="text-center p-10 card-hover rounded-3xl bg-gray-50">
+                <div class="text-6xl mb-6">📉</div>
+                <h3 class="text-2xl font-semibold mb-4">白白损失潜在利润</h3>
+                <p class="text-xl text-gray-600">投入人力投流却留不住客户，有咨询不成交，长期投入无正向回报，找不到优化突破口。</p>
+            </div>
+            <div class="text-center p-10 card-hover rounded-3xl bg-gray-50">
+                <div class="text-6xl mb-6">🚀</div>
+                <h3 class="text-2xl font-semibold mb-4">精准锁定增长突破口</h3>
+                <p class="text-xl text-gray-600">依托15年全域运营经验60项维度体检，给出低成本可落地优化方案，搭配硅快速提升业绩。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 【优化后】6大诊断板块 2列紧凑卡片布局，消除冗长突兀 -->
+<section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-6">全套6大板块 · 合计60项诊断评估</h2>
+        <p class="text-xl text-center text-gray-600 mb-12">覆盖品牌、内容、流量、私域、团队、数据全链路经营问题</p>
+        <!-- 两行两列紧凑卡片，不再长条折叠，页面缩短不割裂 -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-10 rounded-3xl card-hover shadow">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-4">01 品牌定位与信息素（10项）</h3>
+                <p class="text-lg text-gray-600">品牌差异化、人群画像、视觉IP、信任背书、定价、同行差距全方位评估</p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl card-hover shadow">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-4">02 短视频内容生产（10项）</h3>
+                <p class="text-lg text-gray-600">选题储备、爆款能力、原创合规、更新频率、AI工具使用情况诊断</p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl card-hover shadow">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-4">03 全平台流量标签（10项）</h3>
+                <p class="text-lg text-gray-600">账号垂直度、同城流量、投流ROI、粉丝增长、矩阵布局分析</p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl card-hover shadow">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-4">04 私域转化全链路（10项）</h3>
+                <p class="text-lg text-gray-600">引流路径、自动回复、客户分层、成交话术、老客复购评估</p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl card-hover shadow">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-4">05 AI工具&团队落地（10项）</h3>
+                <p class="text-lg text-gray-600">岗位配置、人力成本、硅基使用完整度、人员流失痛点排查</p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl card-hover shadow">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-4">06 数据复盘经营体系（10项）</h3>
+                <p class="text-lg text-gray-600">投入产出、算力管控、月度优化、长期增长规划诊断</p>
+            </div>
+        </div>
+        <p class="text-center mt-10 text-lg text-gray-500">六大板块各10项评估维度，完整覆盖企业线上全部经营卡点</p>
+    </div>
+</section>
+
+<!-- 诊断三大成果 -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold mb-8">完成诊断，你将一次性获得3大成果</h2>
+        <div class="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+            <div class="p-8 card-hover rounded-3xl bg-gray-50">
+                <h3 class="text-2xl font-semibold mb-4">📋 完整诊断报告</h3>
+                <p class="text-xl text-gray-600">60项维度打分，标注优先级经营卡点，清晰看见问题根源</p>
+            </div>
+            <div class="p-8 card-hover rounded-3xl bg-gray-50">
+                <h3 class="text-2xl font-semibold mb-4">🎯 专属落地方案</h3>
+                <p class="text-xl text-gray-600">匹配硅基+陪跑最优组合，给出分阶段执行计划</p>
+            </div>
+            <div class="p-8 card-hover rounded-3xl bg-gray-50">
+                <h3 class="text-2xl font-semibold mb-4">🚀 量化增长预估</h3>
+                <p class="text-xl text-gray-600">内容、咨询、客户留存三大维度提升预期</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 表单区块 -->
+<section id="form" class="py-20 bg-red-600 text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold mb-6">准备好找到企业增长突破口？</h2>
+        <p class="text-xl mb-10">填写基础信息，24小时内AI+人工联合出具完整诊断报告</p>
+        <form class="bg-white/10 backdrop-blur-lg p-10 rounded-3xl text-left card-hover">
+            <div class="grid md:grid-cols-2 gap-6">
+                <input type="text" placeholder="您的姓名 *" required class="bg-white/20 rounded-2xl px-6 py-5 text-xl text-white placeholder:text-white/70 focus:outline-none">
+                <input type="text" placeholder="公司全称 *" required class="bg-white/20 rounded-2xl px-6 py-5 text-xl text-white placeholder:text-white/70 focus:outline-none">
+                <input type="tel" placeholder="联系手机号 *" required class="bg-white/20 rounded-2xl px-6 py-5 text-xl text-white placeholder:text-white focus:outline-none">
+                <input type="text" placeholder="主营业务/行业 *" required class="bg-white/20 rounded-2xl px-6 py-5 text-xl text-white placeholder:text-white/70 focus:outline-none">
+            </div>
+            <textarea placeholder="当前新媒体最大痛点（流量少/转化低/没人运营等）" class="mt-6 w-full bg-white/20 rounded-3xl px-6 py-5 text-xl h-32 text-white placeholder:text-white/70 focus:outline-none"></textarea>
+            <button type="submit" class="mt-10 w-full bg-white text-red-600 py-6 text-2xl font-bold rounded-2xl card-hover">提交免费诊断申请</button>
+        </form>
+    </div>
+</section>
+
+<!-- 统一页脚 -->
+<footer class="bg-slate-900 text-gray-400 py-12">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <p class="text-lg">© 2026 湖北我们科技创业发展有限公司</p>
+        <p class="mt-1">鄂ICP备2026031801号-1</p>
+        <p class="mt-3 text-sm">让企业像火箭一样起飞</p>
+    </footer>
+</footer>
+</body>
+</html>

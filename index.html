@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body { font-family: 'PingFang SC', system-ui, sans-serif; }
+        .hero-bg { background: linear-gradient(135deg, #0F172A 0%, #1E40AF 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(59, 130, 0.15); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- 统一导航 -->
+    <nav class="fixed top-0 w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="text-3xl font-bold text-blue-600">硅基员工</span>
+                <span class="text-sm text-gray-500">· 湖北我们科技</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-lg">
+                <a href="index.html" class="text-blue-600 font-semibold">首页</a>
+                <a href="chanpin.html" class="hover:text-blue-600">产品介绍</a>
+                <a href="gongneng.html" class="hover:text-blue-600">核心功能</a>
+                <a href="peipao.html" class="hover:text-orange-500">陪跑服务</a>
+                <a href="knowledge.html" class="hover:text-blue-600">知识库</a>
+                <a href="qushi.html" class="hover:text-blue-600">行业趋势</a>
+                <a href="about.html" class="hover:text-blue-600">关于我们</a>
+                <a href="contact.html" class="hover:text-blue-600">联系我们</a>
+            </div>
+            <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition">预约免费演示</a>
+        </div>
+    </nav>
+
+    <!-- 大气Banner，适度控高度不臃肿 -->
+    <section class="hero-bg text-white pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                硅基员工 | AI原生全能数字员工
+            </h1>
+            <p class="text-2xl md:text-3xl mb-4 font-medium">让企业像火箭一样起飞</p>
+            <p class="text-xl md:text-2xl max-w-4xl mx-auto text-blue-100 mb-12">
+                2026企业数字化终极解决方案，人工聚焦战略溢价，硅包揽全链路量产；7×24小时无人数字铁军，算力投入透明可控
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="contact.html" class="bg-white text-blue-700 px-10 py-5 rounded-2xl text-xl font-semibold hover:bg-blue-50 transition card-hover">
+                    立即预约免费演示
+                </a>
+                <a href="zhen-duan.html" class="border-2 border-white px-10 py-5 rounded-2xl text-xl font-semibold hover:bg-white hover:text-blue-700 transition card-hover">
+                    免费企业诊断
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第一板块：三大商业趋势（厚重卡片） -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">2026年，企业无法绕开的三大商业新趋势</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-gradient-to-br from-blue-50 to-white p-10 rounded-3xl border border-blue-100 card-hover">
+                    <div class="text-5xl font-bold text-blue-200 mb-4">01</div>
+                    <h3 class="text-2xl font-semibold mb-4">职场生产力彻底重构</h3>
+                    <p class="text-lg text-gray-600">80%人力开销消耗剪辑、客服、运营重复工作，硅基永久在岗无休假，释放人才深耕高价值业务。</p>
+                </div>
+                <div class="bg-gradient-to-br from-blue-50 to-white p-10 rounded-3xl border border-blue-100 card-hover">
+                    <div class="text-5xl font-bold text-blue-200 mb-4">02</div>
+                    <h3 class="text-2xl font-semibold mb-4">多智能体自主协同</h3>
+                    <p class="text-lg text-gray-600">淘汰碎片化单点AI，全链路自动拆解任务、闭环获客转化，无需人工每日盯控调度。</p>
+                </div>
+                <div class="bg-gradient-to-br from-blue-50 to-white p-10 rounded-3xl border border-blue-100 card-hover">
+                    <div class="text-5xl font-bold text-blue-200 mb-4">03</div>
+                    <h3 class="text-2xl font-semibold mb-4">算力量化资产化经营</h3>
+                    <p class="text-lg text-gray-600">每条视频、文案算力消耗可溯源，自用节流、对外增值双向盈利，告别成本黑箱。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第二板块：四大核心竞争力（加宽厚重卡片） -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">四大核心竞争力，甩开同行差距</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-10 rounded-3xl shadow card-hover">
+                    <h3 class="text-2xl font-semibold mb-4">AIGC全模态原创生产</h3>
+                    <p class="text-lg text-gray-600">10-50倍产能提升，独家去重算法保障100%商用合规，短视频/图文批量产出。</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl shadow card-hover">
+                    <h3 class="text-2xl font-semibold mb-4">五大智能体铁军</h3>
+                    <p class="text-lg text-gray-600">运营/线索/客服/销售/人事7×24同步在线，全年无休稳定获客。</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl shadow card-hover">
+                    <h3 class="text-2xl font-semibold mb-4">算力透明商用体系</h3>
+                    <p class="text-lg text-gray-600">每一笔AI消耗明细可查，自定义套餐，对内管控成本、对外做增值业务。</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl shadow card-hover">
+                    <h3 class="text-2xl font-semibold mb-4">会进化的私有知识库</h3>
+                    <p class="text-lg text-gray-600">上传企业专属资料，一句话调度全系统，零基础老板轻松上手。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 新增板块：15年企业硬核实力（填补中段空白，解决前重后轻） -->
+    <section class="py-20 bg-[#0F172A] text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-16">15年全域营销沉淀，专业实力看得见</h2>
+            <div class="grid md:grid-cols-4 gap-10">
+                <div class="card-hover p-8">
+                    <i class="fa-solid fa-layer-group text-6xl text-blue-400 mb-6"></i>
+                    <h3 class="text-3xl font-bold mb-3">全平台吃透</h3>
+                    <p class="text-xl text-gray-300">抖音/视频号/小红书/快手底层算法全覆盖</p>
+                </div>
+                <div class="card-hover p-8">
+                    <i class="fa-solid fa-file-video text-6xl text-blue-400 mb-6"></i>
+                    <h3 class="text-3xl font-bold mb-3">上万落地案例</h3>
+                    <p class="text-xl text-gray-300">实体、商贸、服务行业完整运营经验</p>
+                </div>
+                <div class="card-hover p-8">
+                    <i class="fa-solid fa-microchip text-6xl text-blue-400 mb-6"></i>
+                    <h3 class="text-3xl font-bold mb-3">自研AI系统</h3>
+                    <p class="text-xl text-gray-300">多智能体原生架构，自主可控底层技术</p>
+                </div>
+                <div class="card-hover p-8">
+                    <i class="fa-solid fa-users-gear text-6xl text-blue-400 mb-6"></i>
+                    <h3 class="text-3xl font-bold mb-3">一对一陪跑</h3>
+                    <p class="text-xl text-gray-300">工具+运营团队双重落地保障</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第三板块：陪跑服务引导（原有加厚排版） -->
+    <section class="py-20 bg-orange-50">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">不止提供AI工具，更陪您跑出真实业绩</h2>
+            <p class="text-xl text-gray-600 mb-10">90%企业采购AI后闲置，硅基员工 × 陪跑商学院双轮落地，全程手把手运营，不用独自试错踩坑</p>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
+                <div class="bg-white p-8 rounded-3xl card-hover">
+                    <i class="fa-solid fa-magnifying-glass-chart text-orange-500 text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3">免费全盘诊断</h3>
+                    <p class="text-gray-600">60项维度体检，精准定位流量转化卡点</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl card-hover">
+                    <i class="fa-solid fa-clipboard-check text-orange-500 text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3">全套运营方案</h3>
+                    <p class="text-gray-600">全媒体矩阵、短视频脚本标准化输出</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl card-hover">
+                    <i class="fa-solid fa-person-chalkboard text-orange-500 text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3">全年一对一指导</h3>
+                    <p class="text-gray-600">每周数据复盘，实时调整运营策略</p>
+                </div>
+            </div>
+            <a href="peipao.html" class="inline-block bg-orange-500 text-white px-12 py-5 rounded-2xl text-xl font-semibold hover:bg-orange-600 transition card-hover">
+                了解完整陪跑服务 &gt;
+            </a>
+        </div>
+    </section>
+
+    <!-- 第四板块：安全合规保障（新增下半部分厚重区块，解决虎头蛇尾核心） -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-12">企业级安全合规，数据完全自主掌控</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="flex gap-4 justify-center items-start p-6 card-hover">
+                    <i class="fas fa-shield-alt text-blue-600 text-4xl mt-1"></i>
+                    <div class="text-left">
+                        <h3 class="text-2xl font-semibold mb-2">本地私有化存储</h3>
+                        <p class="text-lg text-gray-600">客户资料、企业知识库本地留存，不上传第三方云端</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 justify-center items-start p-6 card-hover">
+                    <i class="fas fa-copyright text-blue-600 text-4xl mt-1"></i>
+                    <div class="text-left">
+                        <h3 class="text-2xl font-semibold mb-2">全原创风控合规</h3>
+                        <p class="text-lg text-gray-600">独家去重算法，规避平台限流、版权处罚风险</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 justify-center items-start p-6 card-hover">
+                    <i class="fas fa-headset text-blue-600 text-4xl mt-1"></i>
+                    <div class="text-left">
+                        <h3 class="text-2xl font-semibold mb-2">终身迭代售后</h3>
+                        <p class="text-lg text-gray-600">系统免费更新，一对一专属技术支持</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部全域强转化区块（放大视觉权重，底部厚重不单薄） -->
+    <section class="hero-bg text-white py-24 text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-6">不想再高薪招人、盲目投流、运营反复踩坑？</h2>
+            <p class="text-xl md:text-2xl text-blue-100 mb-10">一次免费诊断，精准摸清企业全部流量、人力、转化卡点，配套专属AI落地方案</p>
+            <a href="zhen-duan.html" class="bg-red-600 px-12 py-5 rounded-2xl text-xl font-semibold hover:bg-red-700 transition card-hover">
+                立即领取免费企业新媒体诊断
+            </a>
+        </div>
+    </section>
+
+    <!-- 全站统一Footer -->
+    <footer class="bg-slate-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-lg">© 2026 湖北我们科技创业发展有限公司</p>
+            <p class="mt-1">鄂ICP备2026031801号-1</p>
+            <p class="mt-3 text-sm">硅基员工+落地陪跑，让企业像火箭一样起飞</p>
+        </div>
+    </footer>
+</body>
+</html>
